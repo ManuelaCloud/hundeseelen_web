@@ -66,21 +66,21 @@ Die von dir geschickten Hundefotos sind bereits eingebaut (komprimiert & respons
 - **Hero**: `hero-welpe.jpg`
 - **So helfen wir**: `gruppe-wald.jpg`
 - **Unsere Schützlinge** (3 Fotos): `schnueffeln-gehege.jpg`, `welpe-und-hund-baumstamm.jpg`, `zwei-laufhunde.jpg`
-- **Erfolgsgeschichten**: `story-kiro.jpg` (Kiro) und `story-lucky.jpg` (Lucky)
+- **Erfolgsgeschichten**: `story-kiro.jpg` (Kiro) und `story-lucky.jpg` (Lucky – aktuelles Foto)
 - **Mitglied werden**: `mitglied-portrait.jpg`
 
 Vier weitere von dir geschickte Fotos (zwei Nahaufnahmen einer Hand, die einen Hund streichelt, sowie zwei Alternativ-Crops) liegen unverbaut unter `src/assets/img/spares/` – falls ihr sie später z. B. für Social Media, einen Blog-Beitrag oder eine weitere Unterseite nutzen wollt. Ein Bild austauschen: einfach die entsprechende `.jpg`-Datei unter demselben Namen ersetzen, oder den `src`-Pfad im jeweiligen `.njk`-Template ändern.
 
-**Logo**: Das mitgeschickte Rundlogo trägt noch den alten Vereinsnamen „Die vergessenen Pfoten“ und ist mit 90×90px auch zu klein für den Header – ich habe es deshalb *nicht* verbaut. Aktuell läuft im Header, Footer und Favicon ein selbst gezeichnetes Pfoten-Icon als Platzhalter (`src/_includes/partials/logo-mark.njk` bzw. `src/assets/img/favicon.svg`). Sobald ein neues Logo mit dem Namen „Verlorene Hundeseelen“ existiert (idealerweise als SVG), ersetze ich damit den Platzhalter an allen drei Stellen.
+**Logo**: Das offizielle Rundlogo („Tierschutzverein Verlorene Hundeseelen Südpfalz e.V.“) ist jetzt eingebaut – in Header, Footer und als Favicon (Browser-Tab-Icon, inkl. Homescreen-Icon fürs Handy). Datei: `src/assets/img/logo-badge.png` (512×512, transparenter Rand, funktioniert auf hellem wie dunklem Hintergrund). Die Favicon-Variante ohne Schriftzug liegt als `favicon-32.png` / `favicon-192.png` / `favicon-512.png` / `apple-touch-icon.png` daneben (bei Bedarf zentral in `src/_includes/partials/logo-mark.njk` bzw. `src/_includes/base.njk` austauschbar).
 
 ### IBAN
-Im Spenden-Bereich steht noch die Platzhalter-IBAN `DE00 0000 0000 0000 0000 00` (das war schon in der alten Seite so leer). Bitte die echte Vereins-IBAN in `src/_data/site.json` (`"iban"`) eintragen.
+Die echte Vereins-IBAN ist eingetragen (`src/_data/site.json` → `"iban"`).
 
 ### E-Mail-Adresse
 Ich habe testweise **info@verlorene-hundeseelen.de** für die neue Domain eingesetzt. Bitte prüfen, ob dieses Postfach tatsächlich eingerichtet ist (bzw. eine Weiterleitung auf die bestehende Adresse existiert), bevor die Seite live geht – sonst gehen Anfragen ins Leere.
 
 ### Rechtliche Prüfung (wichtig)
-- Im **Impressum** und der **Datenschutzerklärung** habe ich Name, Adresse und Kontaktdaten unverändert aus der alten Seite übernommen, den Vereinsnamen aber auf „Verlorene Hundeseelen e.V.“ umgestellt. **Bitte prüfen/bestätigen, dass „Verlorene Hundeseelen e.V.“ auch der offiziell im Vereinsregister eingetragene Name ist** – falls die Umbenennung noch nicht offiziell eingetragen ist, muss im Impressum übergangsweise der eingetragene Name stehen.
+- **Vereinsname**: Im Impressum, in den Meta-Tags (Seitenbeschreibung für Google & Social-Media-Vorschau) und im Footer-Copyright steht jetzt der vollständige Name **„Tierschutzverein Verlorene Hundeseelen Südpfalz e.V.“** (laut Logo/deiner Bestätigung). Im Fließtext und der Navigation bleibt weiterhin die Kurzform „Verlorene Hundeseelen“ als Marke. Zentral gepflegt in `src/_data/site.json` → `"legalName"`.
 - In den alten Dateien gab es zwei unterschiedliche Adressen für die „verantwortliche Stelle“ (Impressum: Gewanne Mittelrhein 3a, Hagenbach – Datenschutz: Kirchstraße 2, Schwegenheim). Ich habe beide auf die Impressum-Adresse vereinheitlicht – bitte kurz bestätigen, welche aktuell korrekt ist.
 - Die Datenschutzerklärung habe ich inhaltlich überarbeitet, damit sie zur *neuen* Technik passt (Vercel-Hosting, Zoho-Formulare, PayPal) – die alten Abschnitte zu Borlabs Cookie, Facebook-Connect-Login und WhatsApp Business habe ich entfernt, da diese Dienste auf der neuen Seite nicht eingesetzt werden. Ich bin kein Anwalt – bitte vor Veröffentlichung von einer fachkundigen Stelle (z. B. e-recht24.de-Vorlage oder Anwalt) gegenprüfen lassen, insbesondere auch, ob eine Vereinsregisternummer im Impressum ergänzt werden muss.
 
