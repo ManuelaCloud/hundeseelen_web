@@ -3,7 +3,6 @@ layout: base.njk
 title: Startseite
 description: "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus dem Tierschutz – mit Herz, Verstand und klaren Prozessen. Finde deinen Begleiter oder unterstütze unsere Arbeit."
 ---
-{% from "partials/placeholder.njk" import img as placeholder %}
 
 <!-- ============================= HERO ============================= -->
 <section class="hero">
@@ -23,7 +22,7 @@ description: "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus
     </div>
     <div class="hero__media">
       <div class="hero__media-frame">
-        {{ placeholder("4/5", "Platzhalter · Herzstück-Foto eines geretteten Hundes, Hochformat") }}
+        <img src="/assets/img/hero-welpe.jpg" width="825" height="1100" alt="Welpe sitzt aufmerksam im hohen Gras und schaut gespannt zur Seite" loading="eager" fetchpriority="high">
       </div>
       <div class="hero__badge">
         <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7.5-4.6-10-9.3C.6 8.2 2.3 4.5 6 4c2-.3 3.6.7 6 3 2.4-2.3 4-3.3 6-3 3.7.5 5.4 4.2 4 7.7C19.5 16.4 12 21 12 21Z"/></svg>
@@ -85,7 +84,9 @@ description: "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus
       </ul>
     </div>
     <div class="split__media">
-      {{ placeholder("4/3", "Platzhalter · Ehrenamtliche bei der Versorgung eines Hundes") }}
+      <div class="photo" style="--ph-ratio: 4/3;">
+        <img src="/assets/img/gruppe-wald.jpg" width="1000" height="750" alt="Sieben Hunde sitzen brav nebeneinander auf einem Waldweg" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
@@ -129,9 +130,15 @@ description: "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus
       <p>Ein Blick in ihre Augen sagt mehr als tausend Worte. Alle aktuell vermittelbaren Hunde findest du in unserer Vermittlungsübersicht.</p>
     </div>
     <div class="grid grid--3">
-      {{ placeholder("4/3", "Platzhalter · Hundefoto 1") }}
-      {{ placeholder("4/3", "Platzhalter · Hundefoto 2") }}
-      {{ placeholder("4/3", "Platzhalter · Hundefoto 3") }}
+      <div class="photo" style="--ph-ratio: 4/3;">
+        <img src="/assets/img/schnueffeln-gehege.jpg" width="874" height="582" alt="Drei Hunde schnüffeln im Auslaufgehege im Rindenmulch" loading="lazy">
+      </div>
+      <div class="photo" style="--ph-ratio: 4/3;">
+        <img src="/assets/img/welpe-und-hund-baumstamm.jpg" width="1000" height="750" alt="Welpe und erwachsener Hund sitzen auf einer Wiese hinter einem Baumstamm" loading="lazy">
+      </div>
+      <div class="photo" style="--ph-ratio: 4/3;">
+        <img src="/assets/img/zwei-laufhunde.jpg" width="736" height="406" alt="Zwei Laufhunde stehen aufmerksam nebeneinander auf einer Holzterrasse" loading="lazy">
+      </div>
     </div>
     <p class="text-center mt-lg">
       <a href="{{ site.vermittlungUrl }}" target="_blank" rel="noopener" class="btn btn--secondary">Zu den Hunden aus dem Tierschutz</a>
@@ -216,8 +223,8 @@ description: "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus
     </div>
     <div class="grid" style="gap: var(--space-lg);">
       <article class="story-card">
-        <div class="story-card__media">
-          {{ placeholder("1/1", "Platzhalter · Foto Kiro") }}
+        <div class="story-card__media photo" style="--ph-ratio: 1/1;">
+          <img src="/assets/img/story-kiro.jpg" width="694" height="408" alt="Kiro liegt vorsichtig beobachtend im Sand seines Auslaufs" loading="lazy">
         </div>
         <div class="story-card__body">
           <span class="story-tag">Angsthund wird Abenteurer</span>
@@ -226,8 +233,8 @@ description: "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus
         </div>
       </article>
       <article class="story-card">
-        <div class="story-card__media">
-          {{ placeholder("1/1", "Platzhalter · Foto Lucky") }}
+        <div class="story-card__media photo" style="--ph-ratio: 1/1;">
+          <img src="/assets/img/story-lucky.jpg" width="600" height="800" alt="Lucky als Welpe spielt mit einem blauen Kauspielzeug im Gras" loading="lazy">
         </div>
         <div class="story-card__body">
           <span class="story-tag">Lucky – der neue Schweizer</span>

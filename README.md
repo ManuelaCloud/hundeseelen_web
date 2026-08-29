@@ -62,14 +62,16 @@ Im Vercel-Projekt unter **Settings → Domains** `verlorene-hundeseelen.de` (und
 Diese Punkte sind **bewusst offen gelassen**, weil sie echte Daten/Entscheidungen von dir brauchen:
 
 ### Bilder & Logo
-Aktuell sind an allen Bildstellen gestrichelte Platzhalter-Boxen mit Beschriftung eingebaut (z. B. „Platzhalter · Herzstück-Foto eines geretteten Hundes“). Sobald du mir die echten Fotos/das Logo schickst, ersetze ich sie 1:1 – oder du legst sie selbst in `src/assets/img/` ab und tauschst in den jeweiligen `.njk`-Dateien den `{{ placeholder(...) }}`-Aufruf gegen ein normales `<img>`-Tag.
+Die von dir geschickten Hundefotos sind bereits eingebaut (komprimiert & responsive) unter `src/assets/img/`:
+- **Hero**: `hero-welpe.jpg`
+- **So helfen wir**: `gruppe-wald.jpg`
+- **Unsere Schützlinge** (3 Fotos): `schnueffeln-gehege.jpg`, `welpe-und-hund-baumstamm.jpg`, `zwei-laufhunde.jpg`
+- **Erfolgsgeschichten**: `story-kiro.jpg` (Kiro) und `story-lucky.jpg` (Lucky)
+- **Mitglied werden**: `mitglied-portrait.jpg`
 
-Folgende Stellen brauchen Fotos:
-- **Hero** (`src/index.njk`): 1 Hochformat-Foto, ca. 4:5, „Herzstück“-Bild
-- **So helfen wir**: 1 Querformat-Foto, ca. 4:3
-- **Unsere Schützlinge**: 3 Hundefotos, ca. 4:3
-- **Erfolgsgeschichten**: je 1 quadratisches Foto für Kiro und Lucky
-- **Logo**: aktuell ein selbst gezeichnetes Pfoten-Icon als Platzhalter (`src/_includes/partials/logo-mark.njk`) – bei echtem Logo einfach durch euer Logo-SVG/PNG ersetzen (in Header, Footer und Favicon)
+Vier weitere von dir geschickte Fotos (zwei Nahaufnahmen einer Hand, die einen Hund streichelt, sowie zwei Alternativ-Crops) liegen unverbaut unter `src/assets/img/spares/` – falls ihr sie später z. B. für Social Media, einen Blog-Beitrag oder eine weitere Unterseite nutzen wollt. Ein Bild austauschen: einfach die entsprechende `.jpg`-Datei unter demselben Namen ersetzen, oder den `src`-Pfad im jeweiligen `.njk`-Template ändern.
+
+**Logo**: Das mitgeschickte Rundlogo trägt noch den alten Vereinsnamen „Die vergessenen Pfoten“ und ist mit 90×90px auch zu klein für den Header – ich habe es deshalb *nicht* verbaut. Aktuell läuft im Header, Footer und Favicon ein selbst gezeichnetes Pfoten-Icon als Platzhalter (`src/_includes/partials/logo-mark.njk` bzw. `src/assets/img/favicon.svg`). Sobald ein neues Logo mit dem Namen „Verlorene Hundeseelen“ existiert (idealerweise als SVG), ersetze ich damit den Platzhalter an allen drei Stellen.
 
 ### IBAN
 Im Spenden-Bereich steht noch die Platzhalter-IBAN `DE00 0000 0000 0000 0000 00` (das war schon in der alten Seite so leer). Bitte die echte Vereins-IBAN in `src/_data/site.json` (`"iban"`) eintragen.
