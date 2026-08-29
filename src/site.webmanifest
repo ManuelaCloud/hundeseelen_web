@@ -1,0 +1,11 @@
+{
+  "name": "Verlorene Hundeseelen e.V.",
+  "short_name": "Verlorene Hundeseelen",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfbf6",
+  "theme_color": "#1a3a2e",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/">
+      <span class="brand__mark">{% include "partials/logo-mark.njk" %}</span>
+      <span class="brand__name">Verlorene<br>Hundeseelen<span>Tierschutzverein</span></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Menü öffnen">
+      <span class="nav-toggle__bars"></span>
+    </button>
+
+    <nav class="nav" id="siteNav" data-open="false" aria-label="Hauptnavigation">
+      <ul class="nav__list">
+        {% for item in site.nav %}
+        <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="nav__cta">
+        <a href="/#spenden" class="btn btn--outline btn--sm">Spenden</a>
+        <a href="/mitglied-werden/" class="btn btn--primary btn--sm">Jetzt helfen</a>
+      </div>
+    </nav>
+  </div>
+</header>

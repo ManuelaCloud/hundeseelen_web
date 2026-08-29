@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Impressum
+description: "Impressum von Verlorene Hundeseelen e.V. gemäß § 5 TMG."
+permalink: /impressum/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Rechtliches</p>
+    <h1>Impressum</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="legal">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <p>
+        Verlorene Hundeseelen e.V.<br>
+        vertreten durch: {{ site.impressum.verantwortlich }}<br>
+        {{ site.impressum.street }}<br>
+        {{ site.impressum.zipCity }}
+      </p>
+
+      <h3>Kontakt</h3>
+      <p>
+        Telefon: {{ site.impressum.phone }}<br>
+        E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+
+      <h3>Aufsichtsbehörde</h3>
+      <p>
+        {{ site.impressum.aufsichtsbehoerdeName }}<br>
+        {{ site.impressum.aufsichtsbehoerdeAdresse }}<br>
+        <a href="{{ site.impressum.aufsichtsbehoerdeUrl }}" target="_blank" rel="noopener">{{ site.impressum.aufsichtsbehoerdeUrl }}</a>
+      </p>
+
+      <h3>Redaktionell verantwortlich</h3>
+      <p>{{ site.impressum.verantwortlich }}, Anschrift wie oben.</p>
+
+      <h3>EU-Streitschlichtung</h3>
+      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+
+      <h3>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h3>
+      <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+      <p style="margin-top: var(--space-xl); font-size: 0.85rem;">Quelle: Angelehnt an den Impressum-Generator von e-recht24.de</p>
+    </div>
+  </div>
+</section>

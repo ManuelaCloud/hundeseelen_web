@@ -1,0 +1,264 @@
+---
+layout: base.njk
+title: Startseite
+description: "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus dem Tierschutz – mit Herz, Verstand und klaren Prozessen. Finde deinen Begleiter oder unterstütze unsere Arbeit."
+---
+{% from "partials/placeholder.njk" import img as placeholder %}
+
+<!-- ============================= HERO ============================= -->
+<section class="hero">
+  <svg class="hero__blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path fill="#e3f0e6" d="M437,320Q420,390,360,430Q300,470,235,445Q170,420,140,355Q110,290,150,225Q190,160,260,140Q330,120,390,165Q450,210,450,265Q450,270,437,320Z"/>
+  </svg>
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <p class="eyebrow hero__eyebrow">Tierschutzverein</p>
+      <h1>Jede <em>verlorene Hundeseele</em> verdient ein Zuhause.</h1>
+      <p class="hero__lead">Wir retten, pflegen und vermitteln Hunde aus dem Tierschutz – mit Herz, Verstand und klaren Prozessen. Finde deinen Begleiter oder unterstütze unsere Arbeit.</p>
+      <div class="hero__actions">
+        <a href="#hunde" class="btn btn--secondary">Unsere Schützlinge ansehen</a>
+        <a href="#spenden" class="btn btn--outline">Jetzt spenden</a>
+      </div>
+      <p class="hero__note">„Schön, dass du da bist – denn ohne dich wäre Tierschutz nur ein Wort.“</p>
+    </div>
+    <div class="hero__media">
+      <div class="hero__media-frame">
+        {{ placeholder("4/5", "Platzhalter · Herzstück-Foto eines geretteten Hundes, Hochformat") }}
+      </div>
+      <div class="hero__badge">
+        <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7.5-4.6-10-9.3C.6 8.2 2.3 4.5 6 4c2-.3 3.6.7 6 3 2.4-2.3 4-3.3 6-3 3.7.5 5.4 4.2 4 7.7C19.5 16.4 12 21 12 21Z"/></svg>
+        <div>
+          <strong>Mit Herz &amp; Verstand</strong>
+          <span>geprüfte Pflegestellen, klare Prozesse, ehrliche Begleitung</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ÜBER UNS / WERTE ============================= -->
+<section class="section" id="ueber-uns">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow" style="justify-content:center">Über uns</p>
+      <h2>Weil jedes Leben zählt</h2>
+      <p>Zu viele Tiere werden jeden Tag vergessen – in Tierheimen, auf der Straße, im Ausland oder direkt vor unserer Haustür. Wir wollen diesen Tieren eine Stimme geben und ihnen eine zweite Chance schenken.</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="value-card">
+        <div class="value-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7.5-4.6-10-9.3C.6 8.2 2.3 4.5 6 4c2-.3 3.6.7 6 3 2.4-2.3 4-3.3 6-3 3.7.5 5.4 4.2 4 7.7C19.5 16.4 12 21 12 21Z"/></svg>
+        </div>
+        <h3>Respekt &amp; Verantwortung</h3>
+        <p>Respekt vor jedem Tier, fachkundige Betreuung, klare Abläufe. Wir arbeiten eng mit Tierärzt:innen, Trainer:innen und Behörden zusammen.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l7-5 7 5M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/></svg>
+        </div>
+        <h3>Hilfe statt Wegsehen</h3>
+        <p>Wir schauen hin, wenn andere wegsehen: Rettung aus Notlagen, Aufklärung und Prävention, damit gar nicht erst Leid entsteht.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+        </div>
+        <h3>Transparenz &amp; Vertrauen</h3>
+        <p>Vermittlung mit Herz und Verstand, nachvollziehbare Prozesse und offene Kommunikation – von der ersten Anfrage bis zur Nachkontrolle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SO HELFEN WIR ============================= -->
+<section class="section section--alt">
+  <div class="container split">
+    <div class="split__content">
+      <p class="eyebrow">So helfen wir</p>
+      <h2>Von der Rettung bis zum neuen Zuhause</h2>
+      <p class="hero__lead" style="margin-bottom: var(--space-md);">Rettung aus Notlagen, medizinische Versorgung, Sozialisation und anschließende Vermittlung in sorgfältig geprüfte Hände – jeder Schritt zählt.</p>
+      <ul class="checklist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Akutrettung aus Tierheimen, von der Straße und aus Notlagen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Tierärztliche Versorgung, Kastration und Impfungen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Sozialisation und behutsames Training in Pflegestellen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Sorgfältige Vermittlung mit Vorkontrolle und Schutzvertrag</li>
+      </ul>
+    </div>
+    <div class="split__media">
+      {{ placeholder("4/3", "Platzhalter · Ehrenamtliche bei der Versorgung eines Hundes") }}
+    </div>
+  </div>
+</section>
+
+<!-- ============================= WAS WIR BRAUCHEN / WAS WIR NOCH TUN ============================= -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2">
+      <div class="card">
+        <div class="value-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M10 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Was wir brauchen</h3>
+        <ul class="checklist mt-lg">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Menschen, die uns mit Herz und Hand unterstützen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Pflegestellen, die Tieren ein Zuhause auf Zeit geben</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Ehrenamtliche bei Transporten, Infoständen und Aktionen</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="value-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <h3>Was wir noch tun</h3>
+        <ul class="checklist mt-lg">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Aufklärungs- und Tierschutzarbeit vor Ort</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Unterstützung von Tierheimen im In- und Ausland</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Kastrations- &amp; Impfprogramme gegen nachhaltiges Tierleid</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= HUNDE / VERMITTLUNG ============================= -->
+<section class="section section--alt" id="hunde">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow" style="justify-content:center">Unsere Schützlinge</p>
+      <h2>Sie warten auf ihr zweites Zuhause</h2>
+      <p>Ein Blick in ihre Augen sagt mehr als tausend Worte. Alle aktuell vermittelbaren Hunde findest du in unserer Vermittlungsübersicht.</p>
+    </div>
+    <div class="grid grid--3">
+      {{ placeholder("4/3", "Platzhalter · Hundefoto 1") }}
+      {{ placeholder("4/3", "Platzhalter · Hundefoto 2") }}
+      {{ placeholder("4/3", "Platzhalter · Hundefoto 3") }}
+    </div>
+    <p class="text-center mt-lg">
+      <a href="{{ site.vermittlungUrl }}" target="_blank" rel="noopener" class="btn btn--secondary">Zu den Hunden aus dem Tierschutz</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============================= ADOPTIONSPROZESS ============================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow" style="justify-content:center">So funktioniert's</p>
+      <h2>So läuft eine Adoption bei uns ab</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>Anfrage &amp; Kennenlernen</h3>
+        <p>Du stellst eine unverbindliche Anfrage. Wir sprechen über Alltag, Erfahrung und Erwartungen.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>Vorkontrolle</h3>
+        <p>Ein:e Ehrenamtliche:r besucht dich. Gemeinsam prüfen wir die Rahmenbedingungen und passen den Hund an.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>Vertrag &amp; Einzug</h3>
+        <p>Nach positiver Vorkontrolle schließen wir den Schutzvertrag. Der Hund zieht vorbereitet bei dir ein.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <h3>Begleitung</h3>
+        <p>Wir bleiben Ansprechpartner: Trainer-Empfehlungen, Nachkontrolle und Community-Support inklusive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SPENDEN ============================= -->
+<section class="section section--dark" id="spenden">
+  <div class="container">
+    <div class="donate-panel">
+      <div class="donate-info">
+        <h2>Unterstütze unsere Arbeit</h2>
+        <p style="color: var(--color-ink-500)">Jede Spende hilft bei Futter, Tierarztkosten und Transport. Danke, dass du verlorenen Hundeseelen eine Zukunft schenkst!</p>
+        <dl>
+          <dt>IBAN</dt>
+          <dd>{{ site.iban }}</dd>
+          <dt>Verwendungszweck</dt>
+          <dd>{{ site.ibanVerwendungszweck }}</dd>
+        </dl>
+      </div>
+      <div class="donate-actions">
+        <a href="{{ site.paypalUrl }}" target="_blank" rel="noopener" class="btn btn--primary btn--block">Direktspende via PayPal</a>
+        <a href="/mitglied-werden/#antrag" class="btn btn--outline btn--block">Mitglied werden</a>
+        <a href="#kontakt" class="btn btn--ghost btn--block">Fragen? Schreib uns</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= KONTAKTFORMULAR ============================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow" style="justify-content:center">Kontaktformular</p>
+      <h2>Wir freuen uns von dir zu hören</h2>
+    </div>
+    <div class="form-panel">
+      <iframe aria-label="Kontaktformular – Verlorene Hundeseelen e.V." loading="lazy" src="{{ site.zohoContactFormUrl }}"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ERFOLGSGESCHICHTEN ============================= -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow" style="justify-content:center">Erfolgsgeschichten</p>
+      <h2>Von verlorener Seele zu geliebtem Familienmitglied</h2>
+    </div>
+    <div class="grid" style="gap: var(--space-lg);">
+      <article class="story-card">
+        <div class="story-card__media">
+          {{ placeholder("1/1", "Platzhalter · Foto Kiro") }}
+        </div>
+        <div class="story-card__body">
+          <span class="story-tag">Angsthund wird Abenteurer</span>
+          <h3>Kiro</h3>
+          <p>Kiro brauchte Zeit und Struktur. Mit Geduld, Management und Training blüht er auf – und schwimmt jetzt sogar freiwillig im See.</p>
+        </div>
+      </article>
+      <article class="story-card">
+        <div class="story-card__media">
+          {{ placeholder("1/1", "Platzhalter · Foto Lucky") }}
+        </div>
+        <div class="story-card__body">
+          <span class="story-tag">Lucky – der neue Schweizer</span>
+          <h3>Lucky</h3>
+          <p>Lucky kam als vier Monate alter Welpe aus Kroatien zu uns – ängstlich, zurückhaltend, aber mit gutem Charakter. Heute lebt er wunderbar in der Schweiz und ist richtig aufgeblüht.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= KONTAKT ============================= -->
+<section class="section" id="kontakt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Adresse &amp; Sprechzeiten</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Verein</h3>
+        <p>Verlorene Hundeseelen e.V.<br>{{ site.address.street }}<br>{{ site.address.zipCity }}</p>
+      </div>
+      <div class="contact-card">
+        <h3>Erreichbarkeit</h3>
+        <p><a class="text-link" href="mailto:{{ site.email }}">{{ site.email }}</a><br><a class="text-link" href="tel:{{ site.phoneHref }}">{{ site.phone }}</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>Sprechzeiten</h3>
+        <p>{{ site.sprechzeiten }}</p>
+      </div>
+    </div>
+  </div>
+</section>

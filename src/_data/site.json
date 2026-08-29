@@ -1,0 +1,46 @@
+{
+  "name": "Verlorene Hundeseelen",
+  "legalName": "Verlorene Hundeseelen e.V.",
+  "tagline": "Weil jede verlorene Seele ein Zuhause verdient",
+  "domain": "verlorene-hundeseelen.de",
+  "url": "https://verlorene-hundeseelen.de",
+  "locale": "de_DE",
+  "description": "Verlorene Hundeseelen e.V. rettet, pflegt und vermittelt Hunde aus dem Tierschutz – mit Herz, Verstand und klaren Prozessen.",
+  "email": "info@verlorene-hundeseelen.de",
+  "phone": "0176 37667437",
+  "phoneHref": "+4917637667437",
+  "address": {
+    "street": "Gewanne Mittelrhein 3a",
+    "zipCity": "76767 Hagenbach"
+  },
+  "sprechzeiten": "Mo–Fr 10–12 & 14–17 Uhr",
+  "iban": "DE00 0000 0000 0000 0000 00",
+  "ibanVerwendungszweck": "Verlorene Hundeseelen",
+  "paypalUrl": "https://www.paypal.com/donate/?hosted_button_id=9SNZWLMP68DCY",
+  "zohoContactFormUrl": "https://forms.zohopublic.com/imacongmbh/form/ClientDetails/formperma/xHU9MyPE_UgLeI9bOOLhSo_PgyzHIRe4bu_iMB8bY-w",
+  "zohoMitgliedFormUrl": "https://forms.zohopublic.com/imacongmbh/form/SpendenantragdievergessenenPfoteneV/formperma/E0UqFn5FVVjI3ijBYH9s2mD3SSVlI-lY6UoYmoX5LUg",
+  "vermittlungUrl": "https://www.hundepension-lalupo.de/vermittlung",
+  "impressum": {
+    "verantwortlich": "Andrea Müller",
+    "street": "Gewanne Mittelrhein 3a",
+    "zipCity": "76767 Hagenbach",
+    "phone": "0176 / 37667437",
+    "aufsichtsbehoerdeName": "Veterinäramt Germersheim",
+    "aufsichtsbehoerdeAdresse": "Luitpoldplatz 1, 76726 Germersheim",
+    "aufsichtsbehoerdeUrl": "https://www.kreis-germersheim.de/buergerservice/jugend-soziales-gesundheit/gesundheit-veterinaerwesen/veterinaerwesen/"
+  },
+  "datenschutz": {
+    "verantwortlich": "Andrea Müller",
+    "street": "Gewanne Mittelrhein 3a",
+    "zipCity": "76767 Hagenbach",
+    "phone": "+49 (0) 176-37667437",
+    "email": "info@verlorene-hundeseelen.de"
+  },
+  "nav": [
+    { "label": "Über uns", "href": "/#ueber-uns" },
+    { "label": "Hunde", "href": "/#hunde" },
+    { "label": "Mitglied werden", "href": "/mitglied-werden/" },
+    { "label": "Spenden", "href": "/#spenden" },
+    { "label": "Kontakt", "href": "/#kontakt" }
+  ]
+}

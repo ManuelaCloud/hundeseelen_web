@@ -1,0 +1,14 @@
+{% macro img(ratio, label) %}
+<div class="placeholder-img" style="--ph-ratio: {{ ratio }};">
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="currentColor">
+      <ellipse cx="24" cy="30.5" rx="8.4" ry="7.2"/>
+      <ellipse cx="13.6" cy="20.5" rx="3.9" ry="4.8" transform="rotate(-18 13.6 20.5)"/>
+      <ellipse cx="34.4" cy="20.5" rx="3.9" ry="4.8" transform="rotate(18 34.4 20.5)"/>
+      <ellipse cx="18.4" cy="12.4" rx="3.4" ry="4.3" transform="rotate(-30 18.4 12.4)"/>
+      <ellipse cx="29.6" cy="12.4" rx="3.4" ry="4.3" transform="rotate(30 29.6 12.4)"/>
+    </g>
+  </svg>
+  <span class="placeholder-img__label">{{ label }}</span>
+</div>
+{% endmacro %}
