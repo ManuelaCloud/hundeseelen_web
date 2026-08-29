@@ -284,7 +284,7 @@ ul[class], ol[class] { list-style: none; padding: 0; }
   color: var(--color-primary-dark);
   flex-shrink: 0;
 }
-.brand__mark { width: 42px; height: 42px; flex-shrink: 0; }
+.brand__mark { width: 58px; height: 58px; flex-shrink: 0; }
 .brand__mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .brand__name { line-height: 1.1; }
 .brand__name span { display: block; font-family: var(--font-body); font-weight: 600; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-accent-dark); }
@@ -620,7 +620,7 @@ ul[class], ol[class] { list-style: none; padding: 0; }
 }
 @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr; gap: var(--space-lg); } }
 .footer-brand { display: flex; align-items: center; gap: 0.6rem; color: var(--color-white); font-family: var(--font-display); font-size: 1.2rem; margin-bottom: var(--space-sm); text-decoration: none; }
-.footer-brand__mark { width: 36px; height: 36px; flex-shrink: 0; }
+.footer-brand__mark { width: 52px; height: 52px; flex-shrink: 0; }
 .footer-brand__mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .footer-col h4 { color: var(--color-white); font-family: var(--font-body); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: var(--space-sm); }
 .footer-col ul { display: grid; gap: 0.6rem; }
