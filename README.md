@@ -65,11 +65,12 @@ Diese Punkte sind **bewusst offen gelassen**, weil sie echte Daten/Entscheidunge
 Die von dir geschickten Hundefotos sind bereits eingebaut (komprimiert & responsive) unter `src/assets/img/`:
 - **Hero**: `hero-welpe.jpg`
 - **So helfen wir**: `gruppe-wald.jpg`
-- **Unsere Schützlinge** (3 Fotos): `schnueffeln-gehege.jpg`, `welpe-und-hund-baumstamm.jpg`, `zwei-laufhunde.jpg`
+- **Unsere Schützlinge** (3 Fotos, hochkant): `junghunde-hofplatz.jpg`, `hund-waldspaziergang.jpg`, `welpe-sitzend.jpg`
 - **Erfolgsgeschichten**: `story-kiro.jpg` (Kiro) und `story-lucky.jpg` (Lucky – aktuelles Foto)
 - **Mitglied werden**: `mitglied-portrait.jpg`
+- **Unser Team** (neuer Abschnitt auf der Startseite, unter „Über uns“): `team-andrea.jpg`, `team-maike.jpg`, `team-jessy.jpg`, `team-ruth.jpg`, `team-stefanie.jpg` – kompakte runde Portraits, nur Vorname + Foto, keine Bios. Ein Teammitglied austauschen/ergänzen: Foto unter neuem Dateinamen in `src/assets/img/` ablegen und in `src/index.njk` im Abschnitt „Unser Team“ eine `.team-card` kopieren/anpassen (Bild-Pfad + Name).
 
-Vier weitere von dir geschickte Fotos (zwei Nahaufnahmen einer Hand, die einen Hund streichelt, sowie zwei Alternativ-Crops) liegen unverbaut unter `src/assets/img/spares/` – falls ihr sie später z. B. für Social Media, einen Blog-Beitrag oder eine weitere Unterseite nutzen wollt. Ein Bild austauschen: einfach die entsprechende `.jpg`-Datei unter demselben Namen ersetzen, oder den `src`-Pfad im jeweiligen `.njk`-Template ändern.
+Die ursprünglichen drei „Unsere Schützlinge“-Fotos (`schnueffeln-gehege.jpg`, `welpe-und-hund-baumstamm.jpg`, `zwei-laufhunde.jpg`) sowie vier weitere von dir geschickte Fotos (zwei Nahaufnahmen einer Hand, die einen Hund streichelt, sowie zwei Alternativ-Crops) liegen unverbaut unter `src/assets/img/spares/` – falls ihr sie später z. B. für Social Media, einen Blog-Beitrag oder eine weitere Unterseite nutzen wollt. Ein Bild austauschen: einfach die entsprechende `.jpg`-Datei unter demselben Namen ersetzen, oder den `src`-Pfad im jeweiligen `.njk`-Template ändern.
 
 **Logo**: Das offizielle Rundlogo („Tierschutzverein Verlorene Hundeseelen Südpfalz e.V.“) ist jetzt eingebaut – in Header, Footer und als Favicon (Browser-Tab-Icon, inkl. Homescreen-Icon fürs Handy). Datei: `src/assets/img/logo-badge.png` (512×512, transparenter Rand, funktioniert auf hellem wie dunklem Hintergrund). Die Favicon-Variante ohne Schriftzug liegt als `favicon-32.png` / `favicon-192.png` / `favicon-512.png` / `apple-touch-icon.png` daneben (bei Bedarf zentral in `src/_includes/partials/logo-mark.njk` bzw. `src/_includes/base.njk` austauschbar).
 

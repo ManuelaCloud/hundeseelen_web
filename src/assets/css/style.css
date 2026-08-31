@@ -435,6 +435,46 @@ ul[class], ol[class] { list-style: none; padding: 0; }
 .value-card h3 { font-size: 1.3rem; margin-bottom: var(--space-2xs); color: var(--color-primary-dark); }
 .value-card p { color: var(--color-text-muted); }
 
+/* -------------------------------------------------------------------------
+   Team (kompakt)
+   ------------------------------------------------------------------------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-md);
+  max-width: 760px;
+  margin-inline: auto;
+}
+.team-card {
+  text-align: center;
+}
+.team-card__photo {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto var(--space-2xs);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-white);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-forest-100);
+}
+.team-card__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-card__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-500);
+  color: var(--color-primary-dark);
+}
+@media (max-width: 640px) {
+  .team-grid { grid-template-columns: repeat(3, 1fr); max-width: 420px; }
+  .team-card__photo { width: 84px; height: 84px; }
+}
+
 .checklist { display: grid; gap: var(--space-sm); }
 .checklist li { display: flex; align-items: flex-start; gap: 0.7rem; font-size: var(--fs-500); }
 .checklist li svg { width: 22px; height: 22px; flex-shrink: 0; margin-top: 2px; color: var(--color-accent); }
